@@ -2,18 +2,20 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-/*
-BARVY:
+
+/* BARVY:
 šedá na pozadí stránky:		#b2bec3 
-červená na hlavní nadpis:  #d63031
+červená na hlavní nadpis:   #d63031
 
-tlačítko Twitter:					 #1da1f2
-tlačítko Twitter aktivní:	 #0b7bc1
+tlačítko Twitter:			#1da1f2
+tlačítko Twitter aktivní:	#0b7bc1
 
-tlačítko Facebook:				 #3b5998
-tlačítko Facebook aktivní: #2b406e
-*/
+tlačítko Facebook:			#3b5998
+tlačítko Facebook aktivní:  #2b406e */
 
+
+
+/*--- CSS dle zadání ---*/
 @font-face {
     font-family: 'Nunito';
     src: url(font/Nunito-VariableFont_wght.ttf);
@@ -29,34 +31,69 @@ img{
     height: 150px;
     border: 3px solid white;
     border-radius: 50%;
-    float: right;
-
+    float: inline-end;
+    box-shadow: 0 0 10px gray;
+    /* !!!!!! umístit střed obrázku v pravém horním roku vizitky */
 }
 
 h1{
-    font-size: 36px;
-    font-weight: 700;
-    color: #d63031;
+    font-size: 36px;            /*velikost písma*/
+    font-weight: 700;           /*tučně*/
+    color: #d63031;           /*barva #d63031*/
+    margin-bottom: 30px;
 }
 
 p{
-    font-size: 18px;
+    font-size: 18px;            /*velikost písma*/
 }
 
 .box{
-    margin: 0 auto;
-    width: 550px;
-    margin-top: 150px;
-    padding: 30px;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 0 0 30px gray;
+    margin: 0 auto;             /*horizontálně vycentrováno na střed stránky*/
+    width: 550px;               /*šířka vizitky*/
+    margin-top: 150px;          /*horní odsazení vizitky*/
+    padding: 30px;              /*odsazení dovnitř*/
+    background-color: white;    /*barva pozadí*/
+    border: 1px solid white;    /*rámeček vizitky*/
+    border-radius: 10px;          /*zaoblené rohy*/
+    box-shadow: 0 0 30px gray;  /*stín rámečku*/
+    text-align: justify;          /*zarovnání do bloku*/ 
 }
 
-.twitter,
+
+.twitter a,
+.facebook a{
+    text-align: center;         /*zarovnání na střed*/
+    font-weight: 700;           /*tučně*/
+    font-size: 18px;            /*velikost písma*/
+    text-decoration: none;      /*bez podrtžení odkazu*/
+    text-transform: uppercase;  /*velká písmena*/
+    color: white;             /*barva písma*/
+    margin: 0 auto;             /*horizontálně vycentrováno na střed vizitky*/
+    margin-bottom: 5px;         /*mezera mezi tlačítky*/
+    display: block;             /*vytvoření blokového elementu*/
+    padding: 10px;              /*odsazení textu od okraje*/
+}
+
+.twitter{
+    background-color: #1da1f2;
+    border-radius: 5px;
+}
+
+.twitter a:hover,
+.twitter a:focus,
+.twitter a:active{
+    background-color: #0b7bc1;
+    border-radius: 5px;
+}
+
 .facebook{
-    text-align: center;
-    margin: 0 auto;
-    text-decoration: none;
-    }
+    background-color: #3b5998;
+    border-radius: 5px;
+}
+
+.facebook a:hover,
+.facebook a:focus,
+.facebook a:active{
+    background-color: #2b406e;
+    border-radius: 5px;
+}

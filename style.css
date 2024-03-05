@@ -2,7 +2,6 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-
 /* BARVY:
 šedá na pozadí stránky:		#b2bec3 
 červená na hlavní nadpis:   #d63031
@@ -12,7 +11,6 @@ tlačítko Twitter aktivní:	#0b7bc1
 
 tlačítko Facebook:			#3b5998
 tlačítko Facebook aktivní:  #2b406e */
-
 
 
 /*--- CSS dle zadání ---*/
@@ -61,12 +59,14 @@ p{
     box-shadow: 0 0 30px gray;  /*stín rámečku*/
     text-align: justify;          /*zarovnání do bloku*/ 
     position: relative;
-
 }
 
+.button{
+    border-radius: 5px;
+}
 
-.twitter a,
-.facebook a{
+a.twitter,
+a.facebook{
     text-align: center;         /*zarovnání na střed*/
     font-weight: 700;           /*tučně*/
     font-size: 18px;            /*velikost písma*/
@@ -77,28 +77,23 @@ p{
     margin-bottom: 5px;         /*mezera mezi tlačítky*/
     display: block;             /*vytvoření blokového elementu*/
     padding: 10px;              /*odsazení textu od okraje*/
+    border-radius: 5px;
 }
 
 .twitter{
     background-color: #1da1f2;
-    border-radius: 5px;
 }
 
-.twitter a:hover,
-.twitter a:focus,
-.twitter a:active{
+a.twitter:hover{
     background-color: #0b7bc1;
     border-radius: 5px;
 }
 
 .facebook{
     background-color: #3b5998;
-    border-radius: 5px;
 }
 
-.facebook a:hover,
-.facebook a:focus,
-.facebook a:active{
+a.facebook:hover{
     background-color: #2b406e;
-    border-radius: 5px;
+    border-radius: 5px; 
 }

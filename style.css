@@ -33,8 +33,9 @@ img{
     border-radius: 50%;
     float: inline-end;
     box-shadow: 0 0 10px gray;
-    /* !!!!!! umístit střed obrázku v pravém horním roku vizitky */
-    position: sticky;
+    position: absolute;
+    right: -75px;
+    top: -75px;
 }
 
 h1{
@@ -42,6 +43,7 @@ h1{
     font-weight: 700;           /*tučně*/
     color: #d63031;           /*barva #d63031*/
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 p{
@@ -58,6 +60,7 @@ p{
     border-radius: 10px;          /*zaoblené rohy*/
     box-shadow: 0 0 30px gray;  /*stín rámečku*/
     text-align: justify;          /*zarovnání do bloku*/ 
+    position: relative;
 
 }
 

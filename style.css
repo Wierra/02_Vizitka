@@ -22,6 +22,8 @@ tlačítko Facebook aktivní:  #2b406e */
 body{
     background-color: #b2bec3;
     font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 img{
@@ -29,7 +31,6 @@ img{
     height: 150px;
     border: 3px solid white;
     border-radius: 50%;
-    float: inline-end;
     box-shadow: 0 0 10px gray;
     position: absolute;
     right: -75px;
@@ -44,16 +45,17 @@ h1{
     margin-top: 0;
 }
 
-p{
+.paragraf{
     font-size: 18px;            /*velikost písma*/
+    margin-bottom: 30px;
 }
 
 .box{
-    margin: 0 auto;             /*horizontálně vycentrováno na střed stránky*/
-    width: 550px;               /*šířka vizitky*/
-    margin-top: 150px;          /*horní odsazení vizitky*/
-    padding: 30px;              /*odsazení dovnitř*/
-    background-color: white;    /*barva pozadí*/
+    margin: 0 auto;                 /*horizontálně vycentrováno na střed stránky*/
+    width: 550px;                   /*šířka vizitky*/
+    margin-top: 150px;              /*horní odsazení vizitky*/
+    padding: 30px;                  /*odsazení dovnitř*/
+    background-color: white;       /*barva pozadí*/
     border: 1px solid white;    /*rámeček vizitky*/
     border-radius: 10px;          /*zaoblené rohy*/
     box-shadow: 0 0 30px gray;  /*stín rámečku*/
@@ -63,10 +65,6 @@ p{
 
 .button{
     border-radius: 5px;
-}
-
-a.twitter,
-a.facebook{
     text-align: center;         /*zarovnání na střed*/
     font-weight: 700;           /*tučně*/
     font-size: 18px;            /*velikost písma*/
@@ -77,7 +75,6 @@ a.facebook{
     margin-bottom: 5px;         /*mezera mezi tlačítky*/
     display: block;             /*vytvoření blokového elementu*/
     padding: 10px;              /*odsazení textu od okraje*/
-    border-radius: 5px;
 }
 
 .twitter{
@@ -86,7 +83,6 @@ a.facebook{
 
 a.twitter:hover{
     background-color: #0b7bc1;
-    border-radius: 5px;
 }
 
 .facebook{
@@ -95,5 +91,4 @@ a.twitter:hover{
 
 a.facebook:hover{
     background-color: #2b406e;
-    border-radius: 5px; 
 }
